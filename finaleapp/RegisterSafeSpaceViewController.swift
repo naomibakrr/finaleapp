@@ -27,12 +27,16 @@ class RegisterSafeSpaceViewController: UIViewController {
         
         var nameText = nameField.text
         nameLabel.text = nameField.text
+        
+        print(nameText)
     }
     
     
     @IBAction func submitLocationButton(_ sender: UIButton) {
         var locationText = locationField.text
             locationLabel.text = locationField.text
+        
+        print(locationText)
     }
     
     

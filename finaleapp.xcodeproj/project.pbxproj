@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A818C20C268D0609006DF178 /* RegisterSafeSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818C20B268D0609006DF178 /* RegisterSafeSpaceViewController.swift */; };
+		A818C20E268D10A8006DF178 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818C20D268D10A8006DF178 /* BlogViewController.swift */; };
+		A818C210268D148E006DF178 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818C20F268D148E006DF178 /* SecondViewController.swift */; };
 		A8BF974A268BA3BA00633E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF9749268BA3BA00633E0C /* AppDelegate.swift */; };
 		A8BF974C268BA3BA00633E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF974B268BA3BA00633E0C /* SceneDelegate.swift */; };
 		A8BF974E268BA3BA00633E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF974D268BA3BA00633E0C /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		A818C20B268D0609006DF178 /* RegisterSafeSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSafeSpaceViewController.swift; sourceTree = "<group>"; };
+		A818C20D268D10A8006DF178 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		A818C20F268D148E006DF178 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A8BF9746268BA3BA00633E0C /* finaleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finaleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BF9749268BA3BA00633E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BF974B268BA3BA00633E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		A8BF973D268BA3BA00633E0C = {
 			isa = PBXGroup;
 			children = (
+				A818C20F268D148E006DF178 /* SecondViewController.swift */,
+				A818C20D268D10A8006DF178 /* BlogViewController.swift */,
 				A8BF9748268BA3BA00633E0C /* finaleapp */,
 				A8BF9762268BA3BB00633E0C /* finaleappTests */,
 				A8BF976D268BA3BB00633E0C /* finaleappUITests */,
@@ -266,7 +272,9 @@
 			files = (
 				A8BF974E268BA3BA00633E0C /* ViewController.swift in Sources */,
 				A818C20C268D0609006DF178 /* RegisterSafeSpaceViewController.swift in Sources */,
+				A818C20E268D10A8006DF178 /* BlogViewController.swift in Sources */,
 				A8BF974A268BA3BA00633E0C /* AppDelegate.swift in Sources */,
+				A818C210268D148E006DF178 /* SecondViewController.swift in Sources */,
 				A8BF9754268BA3BA00633E0C /* finaleapp.xcdatamodeld in Sources */,
 				A8BF974C268BA3BA00633E0C /* SceneDelegate.swift in Sources */,
 			);

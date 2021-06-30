@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHb-sX-kXy">
-                                <rect key="frame" x="101" y="31" width="226" height="34"/>
+                                <rect key="frame" x="94" y="51" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.86087566609999999" green="0.53468980394693988" blue="0.85693209028007289" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
@@ -272,7 +272,7 @@
                     <navigationItem key="navigationItem" id="rki-au-JGp"/>
                     <connections>
                         <outlet property="locationField" destination="FKN-si-HJ6" id="Gpv-Uz-ewj"/>
-                        <outlet property="locationLabel" destination="ook-XD-Ou9" id="ZLO-b0-cMx"/>
+                        <outlet property="locationLabel" destination="gxS-aS-xnf" id="yS5-B9-mEf"/>
                         <outlet property="nameField" destination="wxh-Cm-nLA" id="Y2y-gY-MnH"/>
                         <outlet property="nameLabel" destination="0Bm-js-KWH" id="PW3-oh-1X6"/>
                     </connections>
@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="969.56521739130437" y="-632.14285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog View Controller-->
         <scene sceneID="OKw-yr-Jas">
             <objects>
-                <viewController id="hE7-KF-gb4" sceneMemberID="viewController">
+                <viewController id="hE7-KF-gb4" customClass="BlogViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f39-NL-pwp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,7 +333,8 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3sR-qm-dGb" kind="show" id="njc-Cc-0Ga"/>
+                                    <action selector="addBlog:" destination="hE7-KF-gb4" eventType="touchUpInside" id="BaE-MM-MWf"/>
+                                    <segue destination="3sR-qm-dGb" kind="show" identifier="moveBlog" id="njc-Cc-0Ga"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave a Blog Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OX-cg-RKk">
@@ -355,9 +356,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <segue destination="3sR-qm-dGb" kind="show" id="ORo-Fz-ZGj"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-2D-Ycd">
                                 <rect key="frame" x="14" y="53" width="68" height="36"/>
@@ -447,15 +445,18 @@
                         <color key="backgroundColor" red="0.98823523520000001" green="0.96078431610000004" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vby-HM-OvZ"/>
+                    <connections>
+                        <outlet property="blogField" destination="QfK-BJ-LCj" id="0li-5p-q22"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlT-Zu-9tm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1631.8840579710147" y="91.741071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Blog View Controller-->
         <scene sceneID="JUH-or-XO3">
             <objects>
-                <viewController id="3sR-qm-dGb" sceneMemberID="viewController">
+                <viewController id="3sR-qm-dGb" customClass="BlogViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUU-Xt-CZd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -496,6 +497,9 @@
                         <color key="backgroundColor" red="0.99607843159999998" green="0.96078431610000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="yZJ-mo-DPD"/>
+                    <connections>
+                        <outlet property="publishedBlog" destination="SRQ-sX-2eq" id="1IU-XY-FhL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yux-SA-o8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -685,7 +689,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hbb-Y8-XxK"/>
-        <segue reference="njc-Cc-0Ga"/>
         <segue reference="WSi-V2-IHN"/>
     </inferredMetricsTieBreakers>
     <resources>
