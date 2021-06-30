@@ -38,18 +38,6 @@
                                 <rect key="frame" x="-220" y="93" width="868" height="710"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-dP-D8R">
-                                <rect key="frame" x="199" y="729" width="30" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97013573539999998" green="1" blue="0.2766034691" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="10"/>
-                                <state key="normal" title="Go!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Wq9-5u-qGW" kind="show" id="6KJ-uZ-Olk"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHb-sX-kXy">
                                 <rect key="frame" x="138" y="44" width="139" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,6 +47,21 @@
                                 <state key="normal" title="Add a Blog Post">
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hE7-KF-gb4" kind="show" id="goB-Rw-PlR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-dP-D8R">
+                                <rect key="frame" x="192" y="721" width="30" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97013573539999998" green="1" blue="0.2766034691" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="10"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wq9-5u-qGW" kind="show" id="Cur-YK-rOl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -120,6 +123,9 @@
                                 <state key="normal" title="Add to Blog Space">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3sR-qm-dGb" kind="show" id="njc-Cc-0Ga"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave a Blog Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OX-cg-RKk">
                                 <rect key="frame" x="140" y="172" width="0.0" height="0.0"/>
@@ -245,6 +251,20 @@
                                     <segue destination="hE7-KF-gb4" kind="show" id="MvT-Vy-WQv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check Out What" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW0-oG-b4u">
+                                <rect key="frame" x="127" y="651" width="120" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friends Are" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-Jn-3sD">
+                                <rect key="frame" x="154" y="673" width="80" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhc-nn-BsS"/>
                         <color key="backgroundColor" red="0.94333755970001221" green="0.77734749345814425" blue="0.62290138560712272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -256,6 +276,10 @@
             <point key="canvasLocation" x="782.60869565217399" y="91.741071428571431"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="njc-Cc-0Ga"/>
+        <segue reference="MvT-Vy-WQv"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="LGBTq+ Earth-6" width="1728" height="2304"/>
         <image name="Unknown" width="225" height="225"/>
