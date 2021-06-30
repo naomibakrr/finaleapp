@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="969.56521739130437" y="-632.14285714285711"/>
         </scene>
-        <!--Blog View Controller-->
+        <!--View Controller-->
         <scene sceneID="OKw-yr-Jas">
             <objects>
-                <viewController id="hE7-KF-gb4" customClass="BlogViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hE7-KF-gb4" customClass="ViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f39-NL-pwp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,7 +334,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addBlog:" destination="hE7-KF-gb4" eventType="touchUpInside" id="BaE-MM-MWf"/>
-                                    <segue destination="3sR-qm-dGb" kind="show" identifier="moveBlog" id="njc-Cc-0Ga"/>
+                                    <action selector="postBlogButton:" destination="hE7-KF-gb4" eventType="touchUpInside" id="FJS-YO-plu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave a Blog Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OX-cg-RKk">
@@ -447,16 +447,18 @@
                     <navigationItem key="navigationItem" id="Vby-HM-OvZ"/>
                     <connections>
                         <outlet property="blogField" destination="QfK-BJ-LCj" id="0li-5p-q22"/>
+                        <outlet property="blogText" destination="QfK-BJ-LCj" id="aec-zx-AwV"/>
+                        <segue destination="3sR-qm-dGb" kind="presentation" identifier="name" id="FLD-wg-cA3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlT-Zu-9tm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1631.8840579710147" y="91.741071428571431"/>
         </scene>
-        <!--Blog View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="JUH-or-XO3">
             <objects>
-                <viewController id="3sR-qm-dGb" customClass="BlogViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3sR-qm-dGb" customClass="SecondViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUU-Xt-CZd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,8 +487,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frE-f6-fsJ">
-                                <rect key="frame" x="71" y="174" width="226" height="21"/>
+                                <rect key="frame" x="71" y="174" width="279" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -496,6 +499,9 @@
                         <color key="backgroundColor" red="0.99607843159999998" green="0.96078431610000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="yZJ-mo-DPD"/>
+                    <connections>
+                        <outlet property="blogLabel" destination="frE-f6-fsJ" id="sWb-dg-rid"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yux-SA-o8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

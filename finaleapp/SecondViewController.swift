@@ -9,14 +9,14 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var blogLabel: UILabel!
     
-    var blogScrip = BlogViewController()
+    var finalPost = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //BlogViewController().addBlog()
+        blogLabel.text = finalPost
 
         // Do any additional setup after loading the view.
     }

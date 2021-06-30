@@ -12,14 +12,12 @@ class BlogViewController: UIViewController {
     @IBOutlet weak var blogField: UITextField!
     
     
-    @IBOutlet weak var publishedBlog: UILabel!
     
     
     @IBAction func addBlog(_ sender: UIButton) {
         
         
-     // publishedBlog.text = blogField.text
-        
+
         
     }
     
