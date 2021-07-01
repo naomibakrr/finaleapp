@@ -58,7 +58,7 @@ class MapLocation1ViewController: UIViewController, MKMapViewDelegate{
             annotationView?.annotation = annotation
         }
         
-        annotationView?.image = UIImage(named: "pin")
+        annotationView?.image = UIImage(named: "smallheart")
         return annotationView
     }
 
