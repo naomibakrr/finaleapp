@@ -38,18 +38,6 @@
                                 <rect key="frame" x="-220" y="93" width="868" height="710"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-dP-D8R">
-                                <rect key="frame" x="192" y="721" width="30" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97013573539999998" green="1" blue="0.2766034691" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="10"/>
-                                <state key="normal" title="Go!">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Wq9-5u-qGW" kind="show" id="3VJ-FX-lbh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHb-sX-kXy">
                                 <rect key="frame" x="94" y="51" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,6 +49,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="kHT-cH-WMv" kind="show" id="3tp-CE-Pvc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-dP-D8R">
+                                <rect key="frame" x="162" y="735" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97013573539999998" green="1" blue="0.2766034691" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="10"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wq9-5u-qGW" kind="show" id="3VJ-FX-lbh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -690,8 +690,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hbb-Y8-XxK"/>
-        <segue reference="WSi-V2-IHN"/>
+        <segue reference="3VJ-FX-lbh"/>
+        <segue reference="8nO-th-rRL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-Transgender_Pride_flag.svg" width="2560" height="1536"/>
