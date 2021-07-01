@@ -21,12 +21,21 @@ class ViewController: UIViewController {
     @IBAction func postBlogButton(_ sender: Any) {
         //originallyUIButton
         
-        self.postText =  blogText.text!
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showBlog"{
+          let destinationController = segue.destination as! SecondViewController
+          destinationController.finalPost = blogText.text!
+        }
+    
+    
+       /* self.postText =  blogText.text!
         performSegue(withIdentifier: "name", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var vc = segue.destination as! SecondViewController
         vc.finalPost = self.postText
-    }
+    }*/
 }
-
+}

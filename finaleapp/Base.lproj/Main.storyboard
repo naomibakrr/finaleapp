@@ -324,19 +324,6 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zf-ZJ-VRM">
-                                <rect key="frame" x="122" y="587" width="159" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9215229366719202" green="0.92912721749494953" blue="0.79284876225257384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
-                                <state key="normal" title="Add to Blog Space">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="addBlog:" destination="hE7-KF-gb4" eventType="touchUpInside" id="BaE-MM-MWf"/>
-                                    <action selector="postBlogButton:" destination="hE7-KF-gb4" eventType="touchUpInside" id="FJS-YO-plu"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave a Blog Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OX-cg-RKk">
                                 <rect key="frame" x="140" y="172" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -440,15 +427,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Screen Shot 2021-06-30 at 10.39.29 AM"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kye-Mg-ass">
+                                <rect key="frame" x="177" y="678" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AddToBlog"/>
+                                <connections>
+                                    <segue destination="3sR-qm-dGb" kind="show" identifier="showBlog" id="Dck-NK-YBt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EbG-xr-vKu"/>
                         <color key="backgroundColor" red="0.98823523520000001" green="0.96078431610000004" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vby-HM-OvZ"/>
                     <connections>
-                        <outlet property="blogField" destination="QfK-BJ-LCj" id="0li-5p-q22"/>
                         <outlet property="blogText" destination="QfK-BJ-LCj" id="aec-zx-AwV"/>
-                        <segue destination="3sR-qm-dGb" kind="presentation" identifier="name" id="FLD-wg-cA3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlT-Zu-9tm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -662,22 +655,18 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmu-Dz-HtV">
-                                <rect key="frame" x="309" y="20" width="96" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86096512780000001" green="0.68601949549999997" blue="0.25364691340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
-                                <state key="normal" title="Blog Space">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hE7-KF-gb4" kind="show" id="AqF-Cu-Qip"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design-4" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-mB-G3O">
                                 <rect key="frame" x="-20" y="486" width="494" height="356"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1O-fz-avh">
+                                <rect key="frame" x="323" y="0.0" width="71" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blog"/>
+                                <connections>
+                                    <segue destination="hE7-KF-gb4" kind="show" id="hOV-Oh-lWJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhc-nn-BsS"/>
                         <color key="backgroundColor" red="0.94333755970001221" green="0.77734749345814425" blue="0.62290138560712272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -690,8 +679,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3VJ-FX-lbh"/>
-        <segue reference="8nO-th-rRL"/>
+        <segue reference="hbb-Y8-XxK"/>
+        <segue reference="WSi-V2-IHN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-Transgender_Pride_flag.svg" width="2560" height="1536"/>
