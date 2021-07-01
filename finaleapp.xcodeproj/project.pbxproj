@@ -18,6 +18,7 @@
 		A8BF9759268BA3BB00633E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BF9757268BA3BB00633E0C /* LaunchScreen.storyboard */; };
 		A8BF9764268BA3BB00633E0C /* finaleappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF9763268BA3BB00633E0C /* finaleappTests.swift */; };
 		A8BF976F268BA3BB00633E0C /* finaleappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF976E268BA3BB00633E0C /* finaleappUITests.swift */; };
+		A8DDB7F5268E312200149550 /* MapLocation1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DDB7F4268E312200149550 /* MapLocation1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A8BF976A268BA3BB00633E0C /* finaleappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finaleappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BF976E268BA3BB00633E0C /* finaleappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finaleappUITests.swift; sourceTree = "<group>"; };
 		A8BF9770268BA3BB00633E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DDB7F4268E312200149550 /* MapLocation1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		A8BF9748268BA3BA00633E0C /* finaleapp */ = {
 			isa = PBXGroup;
 			children = (
+				A8DDB7F4268E312200149550 /* MapLocation1ViewController.swift */,
 				A818C213268D2259006DF178 /* SecondViewController.swift */,
 				A8BF9749268BA3BA00633E0C /* AppDelegate.swift */,
 				A8BF974B268BA3BA00633E0C /* SceneDelegate.swift */,
@@ -273,6 +276,7 @@
 				A818C214268D2259006DF178 /* SecondViewController.swift in Sources */,
 				A8BF9754268BA3BA00633E0C /* finaleapp.xcdatamodeld in Sources */,
 				A8BF974C268BA3BA00633E0C /* SceneDelegate.swift in Sources */,
+				A8DDB7F5268E312200149550 /* MapLocation1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
