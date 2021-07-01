@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A818C20C268D0609006DF178 /* RegisterSafeSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818C20B268D0609006DF178 /* RegisterSafeSpaceViewController.swift */; };
 		A818C214268D2259006DF178 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818C213268D2259006DF178 /* SecondViewController.swift */; };
+		A848DE3C268E37E700C564D4 /* UploadFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A848DE3B268E37E700C564D4 /* UploadFileViewController.swift */; };
 		A8BF974A268BA3BA00633E0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF9749268BA3BA00633E0C /* AppDelegate.swift */; };
 		A8BF974C268BA3BA00633E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF974B268BA3BA00633E0C /* SceneDelegate.swift */; };
 		A8BF974E268BA3BA00633E0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BF974D268BA3BA00633E0C /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		A818C20B268D0609006DF178 /* RegisterSafeSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSafeSpaceViewController.swift; sourceTree = "<group>"; };
 		A818C213268D2259006DF178 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A848DE3B268E37E700C564D4 /* UploadFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileViewController.swift; sourceTree = "<group>"; };
 		A8BF9746268BA3BA00633E0C /* finaleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finaleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BF9749268BA3BA00633E0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BF974B268BA3BA00633E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				A8BF9757268BA3BB00633E0C /* LaunchScreen.storyboard */,
 				A8BF975A268BA3BB00633E0C /* Info.plist */,
 				A8BF9752268BA3BA00633E0C /* finaleapp.xcdatamodeld */,
+				A848DE3B268E37E700C564D4 /* UploadFileViewController.swift */,
 			);
 			path = finaleapp;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				A8BF974A268BA3BA00633E0C /* AppDelegate.swift in Sources */,
 				A818C214268D2259006DF178 /* SecondViewController.swift in Sources */,
 				A8BF9754268BA3BA00633E0C /* finaleapp.xcdatamodeld in Sources */,
+				A848DE3C268E37E700C564D4 /* UploadFileViewController.swift in Sources */,
 				A8BF974C268BA3BA00633E0C /* SceneDelegate.swift in Sources */,
 				A8DDB7F5268E312200149550 /* MapLocation1ViewController.swift in Sources */,
 			);

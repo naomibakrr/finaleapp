@@ -494,6 +494,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e59-yu-5EU">
+                                <rect key="frame" x="246" y="620" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <segue destination="owl-JQ-SvF" kind="show" id="jhT-we-VFh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Rm-zY-pUc"/>
                         <color key="backgroundColor" red="0.99607843159999998" green="0.96078431610000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -508,12 +516,12 @@
             </objects>
             <point key="canvasLocation" x="2350.7246376811595" y="91.741071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Upload File View Controller-->
         <scene sceneID="JFA-6n-l6H">
             <objects>
-                <viewController id="owl-JQ-SvF" sceneMemberID="viewController">
+                <viewController id="owl-JQ-SvF" customClass="UploadFileViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6IR-rs-1pg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-ku-fC1">
@@ -567,11 +575,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SHJ-4Y-6q8">
-                                <rect key="frame" x="115" y="556" width="184" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wik-rd-PxJ">
                                 <rect key="frame" x="55" y="78" width="86" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -587,11 +590,23 @@
                                 <state key="normal" title="Upload Profile Picture">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="upload:" destination="owl-JQ-SvF" eventType="touchUpInside" id="mDk-gu-uej"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SHJ-4Y-6q8">
+                                <rect key="frame" x="115" y="577" width="184" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RUb-AF-ZRD"/>
                         <color key="backgroundColor" red="0.91829442716638732" green="0.89065701906263128" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Zdp-K6-eYd"/>
+                    <connections>
+                        <outlet property="uploadHere" destination="SHJ-4Y-6q8" id="GXp-fs-r7a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy5-LH-Cqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -821,7 +836,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hbb-Y8-XxK"/>
-        <segue reference="hOV-Oh-lWJ"/>
+        <segue reference="ZOD-FP-DIe"/>
         <segue reference="8nO-th-rRL"/>
     </inferredMetricsTieBreakers>
     <resources>
