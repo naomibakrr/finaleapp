@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LGBTQ+ World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-bO-If1">
@@ -44,23 +44,23 @@
                                     <color key="titleColor" systemColor="systemGray6Color"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kHT-cH-WMv" kind="show" id="3tp-CE-Pvc"/>
+                                    <segue destination="kHT-cH-WMv" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="3tp-CE-Pvc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-dP-D8R">
-                                <rect key="frame" x="192" y="736" width="30" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2W-YT-Gbs">
+                                <rect key="frame" x="182" y="725" width="40" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97013573539999998" green="1" blue="0.2766034691" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="10"/>
-                                <state key="normal" title="Go!">
+                                <color key="backgroundColor" red="0.89521028140000003" green="0.83513909740000003" blue="0.91980725529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
+                                <state key="normal" title="Go">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wq9-5u-qGW" kind="show" id="3VJ-FX-lbh"/>
+                                    <segue destination="Wq9-5u-qGW" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="IIC-bZ-gem"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LGBTq+ Earth-6" translatesAutoresizingMaskIntoConstraints="NO" id="woq-fQ-6DG">
-                                <rect key="frame" x="-242" y="93" width="868" height="710"/>
+                                <rect key="frame" x="-220" y="93" width="868" height="710"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -81,7 +81,7 @@
             <objects>
                 <viewController id="kHT-cH-WMv" customClass="RegisterSafeSpaceViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4O-OY-kNj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register As A Safe Space!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ker-gW-wnf">
@@ -149,36 +149,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ook-XD-Ou9">
-                                <rect key="frame" x="35" y="858" width="350" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFk-EY-aRF">
-                                <rect key="frame" x="11" y="457" width="76" height="56"/>
+                                <rect key="frame" x="9" y="457" width="76" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="prideflag2019"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G38-KS-hBi">
-                                <rect key="frame" x="94" y="457" width="76" height="56"/>
+                                <rect key="frame" x="90" y="457" width="76" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Orange_and_Pink_Lesbian_flag"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-df-Occ">
-                                <rect key="frame" x="176" y="457" width="76" height="56"/>
+                                <rect key="frame" x="169" y="457" width="76" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="bisexual-pride-large-flag-5-x-3-12760-p"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NF2-UZ-rKO">
-                                <rect key="frame" x="260" y="457" width="76" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="2560px-Transgender_Pride_flag.svg"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-r0-CsN">
-                                <rect key="frame" x="341" y="457" width="76" height="56"/>
+                                <rect key="frame" x="332" y="457" width="76" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="download"/>
                             </button>
@@ -265,6 +252,11 @@
                                     <action selector="submitNameButton:" destination="kHT-cH-WMv" eventType="touchUpInside" id="xyO-6q-Fas"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-xa-0nT">
+                                <rect key="frame" x="251" y="457" width="76" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="2560px-Transgender_Pride_flag.svg"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gjd-Lr-EzL"/>
                         <color key="backgroundColor" red="0.85574962370968577" green="1" blue="0.78126203309070197" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -286,7 +278,7 @@
             <objects>
                 <viewController id="hE7-KF-gb4" customClass="ViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f39-NL-pwp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5P-9A-O66">
@@ -311,7 +303,7 @@
                                 <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Blog Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHr-SW-wZ2">
-                                <rect key="frame" x="126" y="141" width="150" height="23"/>
+                                <rect key="frame" x="126" y="149" width="150" height="23"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="23"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -343,30 +335,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-2D-Ycd">
-                                <rect key="frame" x="14" y="53" width="68" height="27"/>
-                                <color key="backgroundColor" red="0.86096512784848489" green="0.80788270065859225" blue="0.40274605330228841" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="WSi-V2-IHN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hE-0D-qNt">
-                                <rect key="frame" x="140" y="53" width="108" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hE-0D-qNt">
+                                <rect key="frame" x="144" y="105" width="108" height="27"/>
                                 <color key="backgroundColor" red="0.87058818339999999" green="0.80392158030000005" blue="0.32549020649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
                                 <state key="normal" title="Restaurants">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wq9-5u-qGW" kind="show" id="hbb-Y8-XxK"/>
+                                    <segue destination="Wq9-5u-qGW" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="hbb-Y8-XxK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2z-0R-nMB">
-                                <rect key="frame" x="298" y="53" width="96" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2z-0R-nMB">
+                                <rect key="frame" x="298" y="105" width="96" height="27"/>
                                 <color key="backgroundColor" red="0.88627451660000001" green="0.80000001190000003" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
                                 <state key="normal" title="Blog Space">
@@ -433,6 +414,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="3sR-qm-dGb" kind="show" identifier="showBlog" id="Dck-NK-YBt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-2D-Ycd">
+                                <rect key="frame" x="14" y="105" width="68" height="27"/>
+                                <color key="backgroundColor" red="0.86096512784848489" green="0.80788270065859225" blue="0.40274605330228841" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="WSi-V2-IHN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -533,7 +525,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hE7-KF-gb4" kind="show" id="ZOD-FP-DIe"/>
+                                    <segue destination="hE7-KF-gb4" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="ZOD-FP-DIe"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9C-Im-EG2">
@@ -581,9 +573,9 @@
                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wik-rd-PxJ">
-                                <rect key="frame" x="55" y="78" width="63" height="21"/>
+                                <rect key="frame" x="55" y="78" width="86" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Rockwell-BoldItalic" family="Rockwell" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -610,7 +602,7 @@
             <objects>
                 <viewController id="Wq9-5u-qGW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfJ-g0-mD5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Places Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-Uj-nyu">
@@ -643,7 +635,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="mwQ-JJ-ej2">
-                                <rect key="frame" x="-78" y="240" width="640" height="367"/>
+                                <rect key="frame" x="-87" y="245" width="640" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="hjD-OP-N42">
@@ -670,7 +662,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="8nO-th-rRL"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="8nO-th-rRL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBg-3p-6xO">
@@ -691,7 +683,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hE7-KF-gb4" kind="show" id="hOV-Oh-lWJ"/>
+                                    <segue destination="hE7-KF-gb4" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="hOV-Oh-lWJ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle-cropped-3" translatesAutoresizingMaskIntoConstraints="NO" id="0yu-KV-Yef">
@@ -746,7 +738,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1395 NW 57th Ave, Miami, FL 33126" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQM-jS-CHp">
-                                <rect key="frame" x="159" y="428" width="230" height="24"/>
+                                <rect key="frame" x="164" y="428" width="230" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="9"/>
                                 <nil key="textColor"/>
@@ -774,7 +766,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design-4" translatesAutoresizingMaskIntoConstraints="NO" id="lzx-qN-jKm">
-                                <rect key="frame" x="-140" y="526" width="687" height="298"/>
+                                <rect key="frame" x="-136" y="584" width="687" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="69d8744660562093b1a7f6a35e9fb61f-heart-logo-lgbt-design" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-A6-4Mi">
+                                <rect key="frame" x="323" y="414" width="52" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ba59bbb3-a64b-41f3-a7ba-e75895b3d98f" translatesAutoresizingMaskIntoConstraints="NO" id="gtp-e8-lBu">
+                                <rect key="frame" x="4" y="381" width="210" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -790,11 +790,12 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hbb-Y8-XxK"/>
-        <segue reference="ZOD-FP-DIe"/>
+        <segue reference="hOV-Oh-lWJ"/>
         <segue reference="8nO-th-rRL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-Transgender_Pride_flag.svg" width="2560" height="1536"/>
+        <image name="69d8744660562093b1a7f6a35e9fb61f-heart-logo-lgbt-design" width="512" height="512"/>
         <image name="LGBTq+ Earth-6" width="1728" height="2304"/>
         <image name="Orange_and_Pink_Lesbian_flag" width="900" height="600"/>
         <image name="Screen Shot 2021-06-30 at 10.30.08 AM" width="72" height="61"/>
@@ -810,6 +811,7 @@
         <image name="Unknown" width="225" height="225"/>
         <image name="Untitled design" width="1728" height="2304"/>
         <image name="Untitled design-4" width="1728" height="2304"/>
+        <image name="ba59bbb3-a64b-41f3-a7ba-e75895b3d98f" width="400" height="400"/>
         <image name="bisexual-pride-large-flag-5-x-3-12760-p" width="500" height="300"/>
         <image name="circle-cropped" width="400" height="400"/>
         <image name="circle-cropped-3" width="786" height="786"/>
