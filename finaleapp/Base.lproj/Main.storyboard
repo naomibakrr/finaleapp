@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LGBTQ+ World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQA-bO-If1">
@@ -222,7 +222,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="pYB-DN-mur"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="pYB-DN-mur"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S2-bd-4Wh">
@@ -234,7 +234,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wq9-5u-qGW" kind="show" id="F2A-Ir-iL0"/>
+                                    <segue destination="Wq9-5u-qGW" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="F2A-Ir-iL0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxp-ib-yho">
@@ -246,7 +246,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hE7-KF-gb4" kind="show" id="OLb-8i-xaD"/>
+                                    <segue destination="hE7-KF-gb4" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="OLb-8i-xaD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm9-0X-9Cq">
@@ -258,7 +258,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="owl-JQ-SvF" kind="show" id="vZi-eH-pLh"/>
+                                    <segue destination="owl-JQ-SvF" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="vZi-eH-pLh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wl-N3-RXg">
@@ -340,7 +340,7 @@
             <objects>
                 <viewController id="hE7-KF-gb4" customClass="ViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f39-NL-pwp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog Space" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5P-9A-O66">
@@ -487,7 +487,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="owl-JQ-SvF" kind="show" id="yRE-g7-OBO"/>
+                                    <segue destination="owl-JQ-SvF" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="yRE-g7-OBO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrf-Hs-JPf">
@@ -499,7 +499,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="JFp-fK-bp6"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="JFp-fK-bp6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -572,7 +572,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="bRQ-xz-f71"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="bRQ-xz-f71"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cA-pt-aP3">
@@ -602,7 +602,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="owl-JQ-SvF" kind="show" id="o7l-2c-Qr4"/>
+                                    <segue destination="owl-JQ-SvF" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="o7l-2c-Qr4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -624,7 +624,7 @@
             <objects>
                 <viewController id="owl-JQ-SvF" customClass="UploadFileViewController" customModule="finaleapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6IR-rs-1pg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-ku-fC1">
@@ -724,7 +724,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="qme-sM-stY"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="qme-sM-stY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97e-yD-QUo">
@@ -736,7 +736,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hE7-KF-gb4" kind="show" id="UyX-LE-adh"/>
+                                    <segue destination="hE7-KF-gb4" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="UyX-LE-adh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5m-6x-Wyr">
@@ -757,7 +757,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Wq9-5u-qGW" kind="show" id="yB6-Dm-Tw7"/>
+                                    <segue destination="Wq9-5u-qGW" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="yB6-Dm-Tw7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj4-R8-jwW">
@@ -803,7 +803,7 @@
             <objects>
                 <viewController id="Wq9-5u-qGW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfJ-g0-mD5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Places Near Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-Uj-nyu">
@@ -1020,7 +1020,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="owl-JQ-SvF" kind="show" id="qPq-8z-4TM"/>
+                                    <segue destination="owl-JQ-SvF" kind="custom" identifier="customSegue" customClass="MyCustomSegue" customModule="finaleapp" customModuleProvider="target" id="qPq-8z-4TM"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design-4" translatesAutoresizingMaskIntoConstraints="NO" id="NEV-7g-iAP">
@@ -1081,9 +1081,9 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="F2A-Ir-iL0"/>
-        <segue reference="yRE-g7-OBO"/>
+        <segue reference="vZi-eH-pLh"/>
         <segue reference="OLb-8i-xaD"/>
-        <segue reference="JFp-fK-bp6"/>
+        <segue reference="pYB-DN-mur"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-Transgender_Pride_flag.svg" width="2560" height="1536"/>
