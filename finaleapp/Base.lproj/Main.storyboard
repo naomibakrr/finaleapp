@@ -471,6 +471,9 @@
                                 <state key="normal" title="Reply">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="replyButton:" destination="3sR-qm-dGb" eventType="touchUpInside" id="pt9-uf-WQh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comments: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-v9-lT2">
                                 <rect key="frame" x="35" y="375" width="114" height="26"/>
@@ -487,6 +490,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYN-Ld-taC">
+                                <rect key="frame" x="64" y="409" width="286" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Rm-zY-pUc"/>
                         <color key="backgroundColor" red="0.99607843159999998" green="0.96078431610000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -494,6 +503,7 @@
                     <navigationItem key="navigationItem" id="yZJ-mo-DPD"/>
                     <connections>
                         <outlet property="blogLabel" destination="frE-f6-fsJ" id="sWb-dg-rid"/>
+                        <outlet property="replyText" destination="xYN-Ld-taC" id="pek-mF-5TC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yux-SA-o8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -679,8 +689,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="hOV-Oh-lWJ"/>
         <segue reference="hbb-Y8-XxK"/>
-        <segue reference="WSi-V2-IHN"/>
+        <segue reference="8nO-th-rRL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2560px-Transgender_Pride_flag.svg" width="2560" height="1536"/>

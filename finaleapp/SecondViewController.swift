@@ -11,7 +11,9 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var blogLabel: UILabel!
     
+    @IBOutlet weak var replyText: UITextField!
     var finalPost = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,11 @@ class SecondViewController: UIViewController {
         blogLabel.text = finalPost
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func replyButton(_ sender: UIButton) {
+        replyText.isHidden = false
+        
     }
     
 
