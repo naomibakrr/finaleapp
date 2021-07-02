@@ -631,7 +631,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-ku-fC1">
-                                <rect key="frame" x="151" y="744" width="110" height="64"/>
+                                <rect key="frame" x="150" y="798" width="110" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9227570729211052" green="0.81849775317172457" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
@@ -700,11 +700,6 @@
                                     <action selector="upload:" destination="owl-JQ-SvF" eventType="touchUpInside" id="mDk-gu-uej"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SHJ-4Y-6q8">
-                                <rect key="frame" x="114" y="650" width="184" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Mj-yU-MwK">
                                 <rect key="frame" x="48" y="414" width="317" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -788,6 +783,11 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SHJ-4Y-6q8">
+                                <rect key="frame" x="69" y="628" width="291" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RUb-AF-ZRD"/>
                         <color key="backgroundColor" red="0.91829442716638732" green="0.89065701906263128" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1083,7 +1083,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IIC-bZ-gem"/>
+        <segue reference="yB6-Dm-Tw7"/>
         <segue reference="qPq-8z-4TM"/>
         <segue reference="ZOD-FP-DIe"/>
         <segue reference="qme-sM-stY"/>
